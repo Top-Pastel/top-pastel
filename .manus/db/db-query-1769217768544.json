@@ -1,0 +1,50 @@
+{
+  "query": "SELECT id, customerName, totalAmount, orderStatus, paymentStatus, stripePaymentId FROM orders ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT id, customerName, totalAmount, orderStatus, paymentStatus, stripePaymentId FROM orders ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "180001",
+      "customerName": "Ana Costa",
+      "totalAmount": "15.58",
+      "orderStatus": "pending",
+      "paymentStatus": "pending",
+      "stripePaymentId": "cs_test_b1VOSR2CwYQU3axIG9h8rcdjgkVnzACG1Tg0msyCt4aU2Q4KxZd2jWrbBh"
+    },
+    {
+      "id": "150001",
+      "customerName": "Daiana Silva",
+      "totalAmount": "15.58",
+      "orderStatus": "pending",
+      "paymentStatus": "pending",
+      "stripePaymentId": "cs_test_b1lahBByX09TuqzTAdw6ucvZuszYw3YRbmDwJR2E6HI9raC5LqeinPWRBn"
+    },
+    {
+      "id": "120001",
+      "customerName": "João Silva",
+      "totalAmount": "15.58",
+      "orderStatus": "pending",
+      "paymentStatus": "pending",
+      "stripePaymentId": "cs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP"
+    },
+    {
+      "id": "90004",
+      "customerName": "João Silva",
+      "totalAmount": "15.58",
+      "orderStatus": "pending",
+      "paymentStatus": "pending",
+      "stripePaymentId": "cs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC"
+    },
+    {
+      "id": "90003",
+      "customerName": "João Silva",
+      "totalAmount": "15.58",
+      "orderStatus": "processing",
+      "paymentStatus": "completed",
+      "stripePaymentId": "cs_test_8159651ef98c0f591a6e5900c95c1acf"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcustomerName\ttotalAmount\torderStatus\tpaymentStatus\tstripePaymentId\n180001\tAna Costa\t15.58\tpending\tpending\tcs_test_b1VOSR2CwYQU3axIG9h8rcdjgkVnzACG1Tg0msyCt4aU2Q4KxZd2jWrbBh\n150001\tDaiana Silva\t15.58\tpending\tpending\tcs_test_b1lahBByX09TuqzTAdw6ucvZuszYw3YRbmDwJR2E6HI9raC5LqeinPWRBn\n120001\tJoão Silva\t15.58\tpending\tpending\tcs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP\n90004\tJoão Silva\t15.58\tpending\tpending\tcs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC\n90003\tJoão Silva\t15.58\tprocessing\tcompleted\tcs_test_8159651ef98c0f591a6e5900c95c1acf\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

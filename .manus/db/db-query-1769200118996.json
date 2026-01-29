@@ -1,0 +1,16 @@
+{
+  "query": "SELECT id, stripePaymentId, customerName, customerEmail FROM orders ORDER BY id DESC LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT id, stripePaymentId, customerName, customerEmail FROM orders ORDER BY id DESC LIMIT 1;",
+  "rows": [
+    {
+      "id": "90001",
+      "stripePaymentId": "cs_test_ad4c69a1e7ad4278d8625dd74d476d3b",
+      "customerName": "Test Customer",
+      "customerEmail": "test@example.com"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tstripePaymentId\tcustomerName\tcustomerEmail\n90001\tcs_test_ad4c69a1e7ad4278d8625dd74d476d3b\tTest Customer\ttest@example.com\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

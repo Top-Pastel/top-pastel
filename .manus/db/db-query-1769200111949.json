@@ -1,0 +1,29 @@
+{
+  "query": "SELECT * FROM orders ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT * FROM orders ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "90001",
+      "customerName": "Test Customer",
+      "customerEmail": "test@example.com",
+      "customerPhone": "912345678",
+      "deliveryAddress": "Rua Teste, 123",
+      "deliveryPostalCode": "1000-001",
+      "deliveryCity": "Lisboa",
+      "deliveryType": "home",
+      "shippingCost": "5.58",
+      "totalAmount": "15.58",
+      "stripePaymentId": "cs_test_ad4c69a1e7ad4278d8625dd74d476d3b",
+      "paymentStatus": "completed",
+      "orderStatus": "processing",
+      "cttShippingNumber": "NULL",
+      "cttTrackingUrl": "NULL",
+      "createdAt": "2026-01-23 20:28:24",
+      "updatedAt": "2026-01-23 20:28:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcustomerName\tcustomerEmail\tcustomerPhone\tdeliveryAddress\tdeliveryPostalCode\tdeliveryCity\tdeliveryType\tshippingCost\ttotalAmount\tstripePaymentId\tpaymentStatus\torderStatus\tcttShippingNumber\tcttTrackingUrl\tcreatedAt\tupdatedAt\n90001\tTest Customer\ttest@example.com\t912345678\tRua Teste, 123\t1000-001\tLisboa\thome\t5.58\t15.58\tcs_test_ad4c69a1e7ad4278d8625dd74d476d3b\tcompleted\tprocessing\tNULL\tNULL\t2026-01-23 20:28:24\t2026-01-23 20:28:24\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

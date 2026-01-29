@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) as total, MAX(id) as ultimo_id FROM orders;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT COUNT(*) as total, MAX(id) as ultimo_id FROM orders;",
+  "rows": [
+    {
+      "total": "6",
+      "ultimo_id": "150001"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\tultimo_id\n6\t150001\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

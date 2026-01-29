@@ -1,0 +1,29 @@
+{
+  "query": "SELECT * FROM orders ORDER BY createdAt DESC LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT * FROM orders ORDER BY createdAt DESC LIMIT 1;",
+  "rows": [
+    {
+      "id": "210005",
+      "customerName": "Teste Definitivo",
+      "customerEmail": "teste.definitivo@test.com",
+      "customerPhone": "+351 912345678",
+      "deliveryAddress": "Rua do Teste, 789",
+      "deliveryPostalCode": "4810-433",
+      "deliveryCity": "Guimarães",
+      "deliveryType": "home",
+      "shippingCost": "5.58",
+      "totalAmount": "15.58",
+      "stripePaymentId": "cs_test_b1CdgSF593WykWNTzkWi6V5ukCBKWAIKLo8nxxZd5pEKUAM6KlDYdVTJXS",
+      "paymentStatus": "pending",
+      "orderStatus": "pending",
+      "cttShippingNumber": "NULL",
+      "cttTrackingUrl": "NULL",
+      "createdAt": "2026-01-24 03:06:33",
+      "updatedAt": "2026-01-24 03:06:33"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcustomerName\tcustomerEmail\tcustomerPhone\tdeliveryAddress\tdeliveryPostalCode\tdeliveryCity\tdeliveryType\tshippingCost\ttotalAmount\tstripePaymentId\tpaymentStatus\torderStatus\tcttShippingNumber\tcttTrackingUrl\tcreatedAt\tupdatedAt\n210005\tTeste Definitivo\tteste.definitivo@test.com\t+351 912345678\tRua do Teste, 789\t4810-433\tGuimarães\thome\t5.58\t15.58\tcs_test_b1CdgSF593WykWNTzkWi6V5ukCBKWAIKLo8nxxZd5pEKUAM6KlDYdVTJXS\tpending\tpending\tNULL\tNULL\t2026-01-24 03:06:33\t2026-01-24 03:06:33\n",
+  "stderr": "",
+  "execution_time_ms": 351
+}

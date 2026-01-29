@@ -1,0 +1,31 @@
+{
+  "query": "SELECT id, stripePaymentId, customerName, customerEmail, createdAt FROM orders ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT id, stripePaymentId, customerName, customerEmail, createdAt FROM orders ORDER BY id DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "90003",
+      "stripePaymentId": "cs_test_8159651ef98c0f591a6e5900c95c1acf",
+      "customerName": "João Silva",
+      "customerEmail": "joao@example.com",
+      "createdAt": "2026-01-23 20:29:24"
+    },
+    {
+      "id": "90002",
+      "stripePaymentId": "cs_test_6cb4e86fa602450878e8f1b6a98ed25c",
+      "customerName": "João Silva",
+      "customerEmail": "joao@example.com",
+      "createdAt": "2026-01-23 20:29:20"
+    },
+    {
+      "id": "90001",
+      "stripePaymentId": "cs_test_ad4c69a1e7ad4278d8625dd74d476d3b",
+      "customerName": "Test Customer",
+      "customerEmail": "test@example.com",
+      "createdAt": "2026-01-23 20:28:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tstripePaymentId\tcustomerName\tcustomerEmail\tcreatedAt\n90003\tcs_test_8159651ef98c0f591a6e5900c95c1acf\tJoão Silva\tjoao@example.com\t2026-01-23 20:29:24\n90002\tcs_test_6cb4e86fa602450878e8f1b6a98ed25c\tJoão Silva\tjoao@example.com\t2026-01-23 20:29:20\n90001\tcs_test_ad4c69a1e7ad4278d8625dd74d476d3b\tTest Customer\ttest@example.com\t2026-01-23 20:28:24\n",
+  "stderr": "",
+  "execution_time_ms": 72
+}

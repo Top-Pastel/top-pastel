@@ -1,0 +1,1 @@
+ALTER TABLE `orders` MODIFY COLUMN `deliveryType` enum('ctt_point','home') NOT NULL;

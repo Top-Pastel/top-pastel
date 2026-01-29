@@ -1,0 +1,9 @@
+{
+  "query": "DELETE FROM orders WHERE deliveryType IN ('ponto_ctt', 'domicilio')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute DELETE FROM orders WHERE deliveryType IN ('ponto_ctt', 'domicilio')",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 117
+}

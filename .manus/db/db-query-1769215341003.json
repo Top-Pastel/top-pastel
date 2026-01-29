@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, stripePaymentId FROM orders LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT id, stripePaymentId FROM orders LIMIT 5;",
+  "rows": [
+    {
+      "id": "90001",
+      "stripePaymentId": "cs_test_ad4c69a1e7ad4278d8625dd74d476d3b"
+    },
+    {
+      "id": "90002",
+      "stripePaymentId": "cs_test_6cb4e86fa602450878e8f1b6a98ed25c"
+    },
+    {
+      "id": "90003",
+      "stripePaymentId": "cs_test_8159651ef98c0f591a6e5900c95c1acf"
+    },
+    {
+      "id": "90004",
+      "stripePaymentId": "cs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC"
+    },
+    {
+      "id": "120001",
+      "stripePaymentId": "cs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tstripePaymentId\n90001\tcs_test_ad4c69a1e7ad4278d8625dd74d476d3b\n90002\tcs_test_6cb4e86fa602450878e8f1b6a98ed25c\n90003\tcs_test_8159651ef98c0f591a6e5900c95c1acf\n90004\tcs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC\n120001\tcs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

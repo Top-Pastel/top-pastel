@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) as total_pedidos, COUNT(DISTINCT stripePaymentId) as com_stripe_id FROM orders;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT COUNT(*) as total_pedidos, COUNT(DISTINCT stripePaymentId) as com_stripe_id FROM orders;",
+  "rows": [
+    {
+      "total_pedidos": "13",
+      "com_stripe_id": "13"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_pedidos\tcom_stripe_id\n13\t13\n",
+  "stderr": "",
+  "execution_time_ms": 486
+}

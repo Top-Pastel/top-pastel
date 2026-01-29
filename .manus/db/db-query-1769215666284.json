@@ -1,0 +1,52 @@
+{
+  "query": "SELECT id, stripePaymentId, customerName, customerEmail, createdAt FROM orders ORDER BY createdAt DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user zBfdhiTCKVZowUG.root --database XS8QRqFXQB6NswsCpoYQJT --execute SELECT id, stripePaymentId, customerName, customerEmail, createdAt FROM orders ORDER BY createdAt DESC;",
+  "rows": [
+    {
+      "id": "150001",
+      "stripePaymentId": "cs_test_b1lahBByX09TuqzTAdw6ucvZuszYw3YRbmDwJR2E6HI9raC5LqeinPWRBn",
+      "customerName": "Daiana Silva",
+      "customerEmail": "daycarolinasilva@gmail.com",
+      "createdAt": "2026-01-24 00:04:58"
+    },
+    {
+      "id": "120001",
+      "stripePaymentId": "cs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP",
+      "customerName": "João Silva",
+      "customerEmail": "teste@toppasstel.com",
+      "createdAt": "2026-01-23 21:07:31"
+    },
+    {
+      "id": "90004",
+      "stripePaymentId": "cs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC",
+      "customerName": "João Silva",
+      "customerEmail": "joao@example.com",
+      "createdAt": "2026-01-23 20:44:14"
+    },
+    {
+      "id": "90003",
+      "stripePaymentId": "cs_test_8159651ef98c0f591a6e5900c95c1acf",
+      "customerName": "João Silva",
+      "customerEmail": "joao@example.com",
+      "createdAt": "2026-01-23 20:29:24"
+    },
+    {
+      "id": "90002",
+      "stripePaymentId": "cs_test_6cb4e86fa602450878e8f1b6a98ed25c",
+      "customerName": "João Silva",
+      "customerEmail": "joao@example.com",
+      "createdAt": "2026-01-23 20:29:20"
+    },
+    {
+      "id": "90001",
+      "stripePaymentId": "cs_test_ad4c69a1e7ad4278d8625dd74d476d3b",
+      "customerName": "Test Customer",
+      "customerEmail": "test@example.com",
+      "createdAt": "2026-01-23 20:28:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tstripePaymentId\tcustomerName\tcustomerEmail\tcreatedAt\n150001\tcs_test_b1lahBByX09TuqzTAdw6ucvZuszYw3YRbmDwJR2E6HI9raC5LqeinPWRBn\tDaiana Silva\tdaycarolinasilva@gmail.com\t2026-01-24 00:04:58\n120001\tcs_test_b1etrOAMGOaY9dLhCMurrzTPN7STJ7sD0I0V7NPcDMy2EZGtnXx7HMtbRP\tJoão Silva\tteste@toppasstel.com\t2026-01-23 21:07:31\n90004\tcs_test_b1mdUi2Zezx5kGTkt7hC4I3YlY0kmAqm9CudPNKwnID75Z89jyk36EEiVC\tJoão Silva\tjoao@example.com\t2026-01-23 20:44:14\n90003\tcs_test_8159651ef98c0f591a6e5900c95c1acf\tJoão Silva\tjoao@example.com\t2026-01-23 20:29:24\n90002\tcs_test_6cb4e86fa602450878e8f1b6a98ed25c\tJoão Silva\tjoao@example.com\t2026-01-23 20:29:20\n90001\tcs_test_ad4c69a1e7ad4278d8625dd74d476d3b\tTest Customer\ttest@example.com\t2026-01-23 20:28:24\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

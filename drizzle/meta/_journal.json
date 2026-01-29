@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1768855305215,
+      "tag": "0000_woozy_phalanx",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1769093896699,
+      "tag": "0001_lively_thunderbolts",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1769131763213,
+      "tag": "0002_clean_exiles",
+      "breakpoints": true
+    }
+  ]
+}
