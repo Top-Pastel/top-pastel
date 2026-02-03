@@ -1,25 +1,9 @@
 {
-  "buildCommand": "pnpm build",
-  "devCommand": "pnpm dev",
-  "installCommand": "pnpm install",
+  "version": 2,
   "framework": "other",
-  "outputDirectory": "dist",
-  "env": [
-    "DATABASE_URL",
-    "STRIPE_SECRET_KEY",
-    "VITE_STRIPE_PUBLISHABLE_KEY",
-    "STRIPE_WEBHOOK_SECRET",
-    "JWT_SECRET",
-    "VITE_APP_ID",
-    "OAUTH_SERVER_URL",
-    "VITE_OAUTH_PORTAL_URL",
-    "OWNER_NAME",
-    "OWNER_OPEN_ID",
-    "VITE_APP_TITLE",
-    "VITE_APP_LOGO"
-  ],
+  "outputDirectory": "dist/public",
   "functions": {
-    "api/**": {
+    "api/**/*.ts": {
       "runtime": "nodejs20.x"
     }
   }
